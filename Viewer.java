@@ -163,6 +163,8 @@ public class Viewer extends Thread{
 				this.searching = false;
 				System.out.print("");
 				System.out.print("");
+				System.out.print("");
+				System.out.print("");
 			}else{
 				inicio2 = System.currentTimeMillis();
 				this.vcr = false;
