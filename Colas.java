@@ -25,9 +25,11 @@ public class Colas{
 		int politica = scan.nextInt();
 		int quantum=0;
 		if (politica == 4){
-			System.out.println("quantum?");
+			System.out.println("Tamaño de quantum");
 			quantum = scan.nextInt();
 		}
+		System.out.println("Cantidad de Videos");
+		videos = scan.nextInt();
 		lista[0] = new Viewer(demanda1,busqueda1,0, politica, shortest,quantum); 
 		lista[1] = new Viewer(demanda2,busqueda2,1, politica, !shortest, quantum); 
 		lista[0].start();
@@ -46,8 +48,8 @@ public class Colas{
 		double line_length1 = (double)(lista[0].time_waiting)/(double)total_time;
 		double line_length2 = (double)(lista[1].time_waiting)/(double)total_time;
 		System.out.println("Elapsed time: " + total_time);
-		System.out.println("Vistos: " + lista[0].c);
-		System.out.println("Vistos: " + lista[1].c);
+		System.out.println("Vistos 1: " + lista[0].c);
+		System.out.println("Vistos 2: " + lista[1].c);
 		System.out.println("Throughput 1: "+ throughput1);
 		System.out.println("Throughput 2: "+ throughput2);
 		System.out.println("Response Time 1: "+ response_time1);
