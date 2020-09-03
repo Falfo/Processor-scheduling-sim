@@ -48,11 +48,11 @@ public class Colas{
 		System.out.println("Elapsed time: " + total_time);
 		System.out.println("Vistos: " + lista[0].c);
 		System.out.println("Vistos: " + lista[1].c);
-		System.out.println("TH1: "+ throughput1);
-		System.out.println("TH2: "+ throughput2);
-		System.out.println("RT1: "+ response_time1);
-		System.out.println("RT2: "+ response_time2);
-		System.out.println("Line length: "+ (line_length1+line_length2)/2);
+		System.out.println("Throughput 1: "+ throughput1);
+		System.out.println("Throughput 2: "+ throughput2);
+		System.out.println("Response Time 1: "+ response_time1);
+		System.out.println("Response Time 2: "+ response_time2);
+		System.out.println("Line length: "+ (line_length1+line_length2));
 		//System.out.println(lista[0].time_waiting);
 		//System.out.println(lista[0].time_viewing);
 		//System.out.println(lista[1].time_waiting);

@@ -161,10 +161,13 @@ public class Viewer extends Thread{
 				this.vcr = false;
 				this.waiting = true;
 				this.searching = false;
-				System.out.print("");
-				System.out.print("");
-				System.out.print("");
-				System.out.print("");
+				//System.out.print("");
+				//System.out.print("");
+				//System.out.print("");
+				//System.out.print("");
+				try{
+					Thread.sleep((long)1);
+					}catch(Exception e){}
 			}else{
 				inicio2 = System.currentTimeMillis();
 				this.vcr = false;
