@@ -50,12 +50,17 @@ public class Viewer extends Thread{
 	}
 
 	public void waitFCFS(){
-		System.out.println("Viewer "+ this.num + " esperando");
+		//System.out.println("Viewer "+ this.num + " esperando");
 		this.vcr = false;
 		this.waiting = true;
 		this.searching = false;
+		boolean first = true;
 		long inicio = System.currentTimeMillis();
 		while(Colas.lista[this.otro].vcr){
+			if(first){
+				System.out.println("Viewer "+ this.num + " esperando");
+				first=false;
+			}
 			System.out.print("");
 		}
 		long fin = System.currentTimeMillis();
